@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  background-color: lightcyan;
 }
 
 header {
@@ -13,18 +14,28 @@ header {
   color: aliceblue;
 }
 
-nav {
-margin:0px;
-padding: 20px;
-background-color: lightcyan;
-  margin-bottom: 0px;
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-main{
-  background-color: lightcyan;
-  padding-top: 20px;
-  padding-bottom: 30px;
+.left_nav {
+  float: left;
 }
+
+li a{
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(17, 17, 17);
+}
+
 
 .column {
   float: left;
@@ -32,19 +43,66 @@ main{
 }
 
 .column.left{
-  width: 25%;
+  width: 30%;
 
 }
+
+.Introduction{
+  border-radius: 25px;
+background-color: aquamarine;
+border: 2px solid #73AD21;
+padding: 20px;
+}
+
+.Hope{
+  border-radius: 25px;
+  background-color: aquamarine;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  margin-top: 10px;
+  }
+
+ .learn{
+  background-color: aquamarine;
+  list-style-type: square;
+ }
 
 .column.middle{
-  width: 40%;
-
+  width: 37.23%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 3px;
 }
+
+.column.middle:hover {
+  border: 1px solid #777;
+}
+
+div.desc {
+  padding: 5px;
+  text-align: center;
+}
+
 
 .column.right{
-  width: 35%;
-
+  width: 30%;
 }
+
+.Hobby{
+  border-radius: 25px;
+background-color: aquamarine;
+border: 2px solid #73AD21;
+padding: 20px;
+}
+
+.Fun-Fact{
+  border-radius: 25px;
+  background-color: aquamarine;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  margin-top: 10px;
+  }
+
 
 footer {
   width: 100%;
